@@ -43,4 +43,3 @@ jobs:
           platforms: linux/armv6
           tags: ghcr.io/damienoleary/nginx-proxy-connect-stable-alpine:armv6-latest
           push: false
-
