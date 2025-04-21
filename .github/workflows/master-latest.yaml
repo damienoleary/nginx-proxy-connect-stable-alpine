@@ -40,6 +40,6 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           context: .
           file: ./Dockerfile
-          platforms: linux/armv6
+          platforms: linux/arm/v6
           tags: ghcr.io/damienoleary/nginx-proxy-connect-stable-alpine:armv6-latest
           push: false
