@@ -33,7 +33,7 @@ jobs:
       # due to the way manifests work, the gap between this and the complete push below
       #  could result in pull failures or inconsistencies for arm64, such is life.
       # further duplicated by building both release and debug builds
-      - name: Build and push armv6 Release Docker Image to DockerHub
+      - name: Build and push armv6 Release Docker Image to GitHub Container Registry
         uses: docker/build-push-action@v6
         with:
           build-args: DEBUG_BUILD=0
@@ -42,4 +42,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/arm/v6
           tags: ghcr.io/damienoleary/nginx-proxy-connect-stable-alpine:armv6-latest
-          push: false
+          push: true

@@ -1,5 +1,7 @@
 # nginx:stable-alpine + proxy_connect
 
+Fork that builds linux/arm/v6 image
+
 Upstreams: 
 - [nginx:stable-alpine](https://github.com/nginxinc/docker-nginx/tree/master/stable/alpine) (due this has since long diverged)
 - [ngx_http_proxy_connect_module](https://github.com/chobits/ngx_http_proxy_connect_module)
